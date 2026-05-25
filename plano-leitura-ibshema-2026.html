@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/jpeg" href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGFhZDAxMDAwMGMzMDIwMDAwYWUwMzAwMDBiYTAzMDAwMGRiMDMwMDAwMDcwNTAwMDBkNjA2MDAwMDJmMDcwMDAwM2IwNzAwMDA2MzA3MDAwMDhiMDkwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EAHgAAQACAwEBAAAAAAAAAAAAAAACBwEFBgQDEAABAQQGBAsIAwAAAAAAAAABAgADBBEQEiAhMDEFMlFxEyIzQUJgYYGhseEUFUBQUmJykYKiwREBAAECBAUEAwEAAAAAAAAAAREAITFBUWEQIHGBkTBAobHB0fDx/9oADAMBAAIAAwAAAAGxB9vOAAAAAAABGvbCr0sQAAAB5fGbZjIAABGvbCr0sQAADR+DiZNZ8ieOmtOhrrhn3CIACNe2FXpYgEJ6I0Uff4ZOn0HmycC6XaSxydu8JyOFubmibsxn2iICNe2FXpYgNLrPZ0OXBcHdVNyx8RIsKverw5aP1+WS7aSvOL7CGQI17YVeliA+X1Bot7zWXB6nY7meNR0Om0ZhYW/wq26uJjjPcOW6nAMI17YVeliAAA5iurs0cladT3H2AiA12o6fzZenOi3uEa9sKvSxAAAPL6hGQAAAfP6BGvbCr0sQAAAAAAAAEa9sKvSxFdixFdixFdixFdixFdixFdixFdixFdixFdiwq9D/2gAIAQEAAQUC6grepQyYx0fgYyJ4FKlFRaCjC6ONER9UxS3ijS4M0YRMmXpBaz7REtDwyXI0m4rChy6L1SnqHTe3OWBngxoKkvYlMI3vZveze9gxDh6U6JZ++EPS41LcVFByHKYhStLIs6Mfkg0udS2HdaIZ+64VC0FBp0Xyqs6ECQt1b6IqES+Z7BvHbSZ1CPHjPCmERRDorrw4+G4VLuJeO296PGeR71dENo0SME6ZUMYY8HFqZxErCsKKgA9Z64W6ZzDLetDaPWh5YiEVkI0m7UcKNmUIQEC08dJeCFSXeE9RWAwJX9Tv/9oACAEDAAE/Aesn/9oACAECAAE/AfhwKFW+6ibZsRaTQaFWhTWY32wWn8k//9oACAEBAAY/AuoPGUBvbXHl8D9xyaZMzQEnUPhj1HYrq8PVhwtxlcMrrCD9o8sSTlE+2U2qlGtcDKUptIZ852sFjo57qQkc/k0ioJbX82nghA6agO7Ng7CLpTzbk/H0bk/7ejcn4+jXEuj23p9GveXdgYu3Nx6S+elH4jywNqjkGSpZATnVZCu7/bJR9N6bCPxHlgFR6CU1e+dBTt82INxFj+JY7zSNwwJ9kqdiuYtemY2i+i5J3m4MUJM3itY7KUp2nEmNZPiGuUd2bZJ/Xq2tLddRN5efp2NyYbhHQr81U5ibTr1eyfo3BvhInVVtw6yeKrwLcYS8m4o7+ZkqVKQ7f1ZP28Ybxe18078OqOmpKf2wAyFuShNlu8wmVX8VYXaJEbxgz2/51P8A/9oACAEBAQE/IfZPs32b6Jc9ZR8Y0nBPvP2D0X0L2Xsn7XpTpyYrjwYmWi+vM21PQefZyuKHSC6+KipoAuOnXkdzFl8Od5ACrAEq5BSeIMyTvGAdaYbN1UWTIp5qJkvqr9bUwqWZ18+z98euUdMzQQKAAW8G2NbXx+lAAMiSOo8ryK5E+6XL6pybhlZN0vZltjUdXCgzF40va2QJeo/pSOB/DNivlkTdB2+MqVWW6558P5+jleJO2F193b7wo2wcgcEwBhvm18q/p+eVhsw7GZ2Y80lVcVV68f7OjleOJU75jffA27Qs6DB80BciE5CyciTulMY8LHSeMD0DwHK8YbrJ0GT7fPEWVj/xTM+qx86C+L+SpaPhpOyP4J/FQ3vAZPxsY5vHZ5noXfg5nmUs/g8h1zKw/brPDRrrrKljYND9sfmsd1oYnTIwdSXWkkeGR8zNWeUOI1BF0nHOsZHRHwI+aL9ijba3jucjzzcGb+XffzSEPuxXRwrM8MVYd/1UqOdtK4ZIM+UpGNxmZLxFQS7zFvhYoZuXHg+gA2rpoK/1QBwEBzwwjpc6OJUwslJ3EOyPB9CxmJ1TJ+u9KScNtPQCLMA+UffB9m+zfZvs2v/aAAwDAQACAAMBAAAQCCCCCCCCCqCCCCKKCCCqCCCQdGCCCqCWmW3fwCCqCq79pVFCCqCiU7xbiICqCCCUICCYCqCCCCCCCCiqCCCCCCCCCqCCCCCCCCCi/9oACAEDAAE/EOsn/9oACAECAAE/EMaWDtKAtChI0JMlWioy0cy1mzk17SYhQEStpsT8g//aAAgBAQEBPxD2WD2eD2eD0TQNwgT0xOxV1ewlJ3J80MwlxuOSehg9DBtS64IWWYcs1ClgPK5X9oWMuCQwkXTwactqL4+hg5yS4fAJZGcQNal9OVqaJqM724tYhvdXOYOQ2zyEAJVdApUX6gZ02OpjMtejCeigEIX/AJmWnyvUOoCMZJ/O2lxHW62ix9g+YKL+M+wg7BpTPHdt+am6GBgCROpy4OSXM/lgxXAxQC95CFP8DRpFZbZvukx/a7QUMD1rVNn8itiB+AZqTZqp0jcKZTut2nmzYOKLe90zgvBTC6s2vYnvZSDd60tvA5e53y7dvRlFLqHUAy/PBwaMDy9g4iEgYcpj2x3cPywinaxbTTR1lZJ9jiOZfkV+j0nzSBiN1HHxwSa/xnFy4OIDFibiPAwcRYBI1D+Rjk0pJ0YS/wBHYq/F/S59UYGOWl3uexowu3Ffgu80uL5d3L+8peXBzGDMzWP5Gds6Vgs/l2Pigl9gP1Qhk+IvimoFZo6qvyq1CAUyNl1gBAwvVjE1HgKHNw2S1g/0Q8mLF0Pb5UqyBzAmO5dHo5DBzuITii9tLmz2NbRvHsG7zO1Tt1QodpLF2k1MJmLJmJue3KufTynqJNRqCWQH5veIigAgARGRHBEsjwwegyEmeo3igVY5aH5cVzedg/6jqYhuNPp4m6BDpnDB6CWASXALPsxLakNBlmx2O5h6GaKTt+w4YPZ4PZ4PZ4PZ4K//2Q==">
+<link rel="apple-touch-icon" href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGFhZDAxMDAwMGMzMDIwMDAwYWUwMzAwMDBiYTAzMDAwMGRiMDMwMDAwMDcwNTAwMDBkNjA2MDAwMDJmMDcwMDAwM2IwNzAwMDA2MzA3MDAwMDhiMDkwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EAHgAAQACAwEBAAAAAAAAAAAAAAACBwEFBgQDEAABAQQGBAsIAwAAAAAAAAABAgADBBEQEiAhMDEFMlFxEyIzQUJgYYGhseEUFUBQUmJykYKiwREBAAECBAUEAwEAAAAAAAAAAREAITFBUWEQIHGBkTBAobHB0fDx/9oADAMBAAIAAwAAAAGxB9vOAAAAAAABGvbCr0sQAAAB5fGbZjIAABGvbCr0sQAADR+DiZNZ8ieOmtOhrrhn3CIACNe2FXpYgEJ6I0Uff4ZOn0HmycC6XaSxydu8JyOFubmibsxn2iICNe2FXpYgNLrPZ0OXBcHdVNyx8RIsKverw5aP1+WS7aSvOL7CGQI17YVeliA+X1Bot7zWXB6nY7meNR0Om0ZhYW/wq26uJjjPcOW6nAMI17YVeliAAA5iurs0cladT3H2AiA12o6fzZenOi3uEa9sKvSxAAAPL6hGQAAAfP6BGvbCr0sQAAAAAAAAEa9sKvSxFdixFdixFdixFdixFdixFdixFdixFdixFdiwq9D/2gAIAQEAAQUC6grepQyYx0fgYyJ4FKlFRaCjC6ONER9UxS3ijS4M0YRMmXpBaz7REtDwyXI0m4rChy6L1SnqHTe3OWBngxoKkvYlMI3vZveze9gxDh6U6JZ++EPS41LcVFByHKYhStLIs6Mfkg0udS2HdaIZ+64VC0FBp0Xyqs6ECQt1b6IqES+Z7BvHbSZ1CPHjPCmERRDorrw4+G4VLuJeO296PGeR71dENo0SME6ZUMYY8HFqZxErCsKKgA9Z64W6ZzDLetDaPWh5YiEVkI0m7UcKNmUIQEC08dJeCFSXeE9RWAwJX9Tv/9oACAEDAAE/Aesn/9oACAECAAE/AfhwKFW+6ibZsRaTQaFWhTWY32wWn8k//9oACAEBAAY/AuoPGUBvbXHl8D9xyaZMzQEnUPhj1HYrq8PVhwtxlcMrrCD9o8sSTlE+2U2qlGtcDKUptIZ852sFjo57qQkc/k0ioJbX82nghA6agO7Ng7CLpTzbk/H0bk/7ejcn4+jXEuj23p9GveXdgYu3Nx6S+elH4jywNqjkGSpZATnVZCu7/bJR9N6bCPxHlgFR6CU1e+dBTt82INxFj+JY7zSNwwJ9kqdiuYtemY2i+i5J3m4MUJM3itY7KUp2nEmNZPiGuUd2bZJ/Xq2tLddRN5efp2NyYbhHQr81U5ibTr1eyfo3BvhInVVtw6yeKrwLcYS8m4o7+ZkqVKQ7f1ZP28Ybxe18078OqOmpKf2wAyFuShNlu8wmVX8VYXaJEbxgz2/51P8A/9oACAEBAQE/IfZPs32b6Jc9ZR8Y0nBPvP2D0X0L2Xsn7XpTpyYrjwYmWi+vM21PQefZyuKHSC6+KipoAuOnXkdzFl8Od5ACrAEq5BSeIMyTvGAdaYbN1UWTIp5qJkvqr9bUwqWZ18+z98euUdMzQQKAAW8G2NbXx+lAAMiSOo8ryK5E+6XL6pybhlZN0vZltjUdXCgzF40va2QJeo/pSOB/DNivlkTdB2+MqVWW6558P5+jleJO2F193b7wo2wcgcEwBhvm18q/p+eVhsw7GZ2Y80lVcVV68f7OjleOJU75jffA27Qs6DB80BciE5CyciTulMY8LHSeMD0DwHK8YbrJ0GT7fPEWVj/xTM+qx86C+L+SpaPhpOyP4J/FQ3vAZPxsY5vHZ5noXfg5nmUs/g8h1zKw/brPDRrrrKljYND9sfmsd1oYnTIwdSXWkkeGR8zNWeUOI1BF0nHOsZHRHwI+aL9ijba3jucjzzcGb+XffzSEPuxXRwrM8MVYd/1UqOdtK4ZIM+UpGNxmZLxFQS7zFvhYoZuXHg+gA2rpoK/1QBwEBzwwjpc6OJUwslJ3EOyPB9CxmJ1TJ+u9KScNtPQCLMA+UffB9m+zfZvs2v/aAAwDAQACAAMBAAAQCCCCCCCCCqCCCCKKCCCqCCCQdGCCCqCWmW3fwCCqCq79pVFCCqCiU7xbiICqCCCUICCYCqCCCCCCCCiqCCCCCCCCCqCCCCCCCCCi/9oACAEDAAE/EOsn/9oACAECAAE/EMaWDtKAtChI0JMlWioy0cy1mzk17SYhQEStpsT8g//aAAgBAQEBPxD2WD2eD2eD0TQNwgT0xOxV1ewlJ3J80MwlxuOSehg9DBtS64IWWYcs1ClgPK5X9oWMuCQwkXTwactqL4+hg5yS4fAJZGcQNal9OVqaJqM724tYhvdXOYOQ2zyEAJVdApUX6gZ02OpjMtejCeigEIX/AJmWnyvUOoCMZJ/O2lxHW62ix9g+YKL+M+wg7BpTPHdt+am6GBgCROpy4OSXM/lgxXAxQC95CFP8DRpFZbZvukx/a7QUMD1rVNn8itiB+AZqTZqp0jcKZTut2nmzYOKLe90zgvBTC6s2vYnvZSDd60tvA5e53y7dvRlFLqHUAy/PBwaMDy9g4iEgYcpj2x3cPywinaxbTTR1lZJ9jiOZfkV+j0nzSBiN1HHxwSa/xnFy4OIDFibiPAwcRYBI1D+Rjk0pJ0YS/wBHYq/F/S59UYGOWl3uexowu3Ffgu80uL5d3L+8peXBzGDMzWP5Gds6Vgs/l2Pigl9gP1Qhk+IvimoFZo6qvyq1CAUyNl1gBAwvVjE1HgKHNw2S1g/0Q8mLF0Pb5UqyBzAmO5dHo5DBzuITii9tLmz2NbRvHsG7zO1Tt1QodpLF2k1MJmLJmJue3KufTynqJNRqCWQH5veIigAgARGRHBEsjwwegyEmeo3igVY5aH5cVzedg/6jqYhuNPp4m6BDpnDB6CWASXALPsxLakNBlmx2O5h6GaKTt+w4YPZ4PZ4PZ4PZ4K//2Q==">
+<title>Plano de Leitura Bíblica 2026 · IB Shema</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --azul-escuro:  #1a2d45;
+    --azul-medio:  #1e3a5f;
+    --azul-vivo:   #2d5f8a;
+    --azul-claro:  #3d7ab5;
+    --azul-accent: #4d8fcf;
+    --logo-bg:     #b8cfe0;
+    --logo-icon:   #2d4a6b;
+    --ouro:        #c8a84b;
+    --ouro-claro:  #e8c96a;
+    --ouro-pale:   #faeec7;
+    --branco:      #ffffff;
+    --cinza-bg:    #f2f6fa;
+    --cinza-linha: #dde6f0;
+    --cinza-txt:   #6a82a0;
+    --texto:       #0f1e30;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--azul-escuro);
+    min-height: 100vh;
+    color: var(--texto);
+  }
+
+  /* ===== HEADER ===== */
+  .header {
+    background: linear-gradient(180deg, #0f1e30 0%, #1a2d45 100%);
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* faixa superior fina */
+  .header-topbar {
+    background: #1a2d45;
+    border-bottom: 2px solid #2d4a6b;
+    text-align: center;
+    padding: 8px 16px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.8);
+  }
+
+  .header-main {
+    padding: 28px 20px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* círculos decorativos de fundo */
+  .header-main::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 260px; height: 260px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(30,91,212,0.25) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .header-main::after {
+    content: '';
+    position: absolute;
+    bottom: -40px; left: -50px;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(212,168,67,0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  /* Logo símbolo — menorá estilizada */
+  .logo-mark {
+    width: 96px; height: 96px;
+    border-radius: 22px;
+    overflow: hidden;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.45), 0 0 0 3px rgba(184,207,224,0.35);
+    flex-shrink: 0;
+    background: #b8cfe0;
+  }
+  .logo-img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .header-text { text-align: center; }
+  .church-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #b8cfe0;
+    margin-bottom: 6px;
+  }
+  .plan-title {
+    font-family: 'Merriweather', serif;
+    font-size: 26px;
+    font-weight: 900;
+    color: var(--branco);
+    line-height: 1.2;
+    margin-bottom: 4px;
+  }
+  .plan-title span { color: var(--ouro-claro); }
+  .plan-sub {
+    font-size: 12px;
+    color: rgba(255,255,255,0.45);
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+
+  /* versículo do dia */
+  .header-verse {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(212,168,67,0.25);
+    border-left: 3px solid var(--ouro);
+    border-radius: 0 8px 8px 0;
+    padding: 10px 14px;
+    margin: 0 4px;
+    width: 100%;
+    max-width: 480px;
+  }
+  .header-verse p {
+    font-size: 12px;
+    font-style: italic;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.6;
+  }
+  .header-verse cite {
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--ouro);
+    margin-top: 5px;
+    font-style: normal;
+  }
+
+  /* ===== BARRA DE PROGRESSO ===== */
+  .progress-section {
+    background: var(--azul-medio);
+    padding: 16px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .progress-top {
+    display: flex; justify-content: space-between; align-items: flex-end;
+    margin-bottom: 10px;
+  }
+  .progress-label {
+    font-size: 10px; font-weight: 700;
+    letter-spacing: 2.5px; text-transform: uppercase;
+    color: var(--cinza-txt);
+  }
+  .progress-count {
+    font-family: 'Merriweather', serif;
+    font-size: 24px; font-weight: 900;
+    color: var(--branco); line-height: 1;
+  }
+  .progress-count sup {
+    font-size: 11px; font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--cinza-txt); vertical-align: baseline;
+  }
+  .progress-bar-bg {
+    background: rgba(0,0,0,0.3);
+    border-radius: 99px; height: 6px; overflow: hidden;
+    position: relative;
+  }
+  .progress-bar-fill {
+    height: 100%; border-radius: 99px; min-width: 2px;
+    background: linear-gradient(90deg, var(--azul-claro), var(--ouro-claro));
+    transition: width 0.7s cubic-bezier(.4,0,.2,1);
+    position: relative;
+  }
+  .progress-bar-fill::after {
+    content: '';
+    position: absolute; right: 0; top: -3px;
+    width: 12px; height: 12px;
+    background: var(--ouro-claro);
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(240,201,106,0.7);
+  }
+  .progress-pct {
+    text-align: right; font-size: 10px;
+    color: var(--cinza-txt); margin-top: 6px;
+  }
+
+  /* stats row */
+  .stats-row {
+    display: flex; gap: 0;
+    margin-top: 12px;
+    background: rgba(0,0,0,0.2);
+    border-radius: 10px; overflow: hidden;
+  }
+  .stat-item {
+    flex: 1; padding: 10px 8px; text-align: center;
+    border-right: 1px solid rgba(255,255,255,0.06);
+  }
+  .stat-item:last-child { border-right: none; }
+  .stat-num {
+    font-family: 'Merriweather', serif;
+    font-size: 18px; font-weight: 700;
+    color: var(--branco); line-height: 1;
+    margin-bottom: 3px;
+  }
+  .stat-lbl {
+    font-size: 9px; font-weight: 600;
+    letter-spacing: 1.5px; text-transform: uppercase;
+    color: var(--cinza-txt);
+  }
+
+  /* ===== ABAS MESES ===== */
+  .tabs-wrapper {
+    background: var(--azul-escuro);
+    overflow-x: auto; scrollbar-width: none;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+  }
+  .tabs-wrapper::-webkit-scrollbar { display: none; }
+  .tabs {
+    display: flex; min-width: max-content;
+    padding: 0 14px;
+  }
+  .tab-btn {
+    background: none; border: none;
+    border-bottom: 3px solid transparent;
+    color: rgba(255,255,255,0.35);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px; font-weight: 700;
+    letter-spacing: 1.5px; text-transform: uppercase;
+    padding: 13px 13px 10px;
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+    white-space: nowrap;
+  }
+  .tab-btn:hover { color: rgba(255,255,255,0.7); }
+  .tab-btn.active { color: var(--ouro-claro); border-bottom-color: var(--ouro); }
+
+  /* ===== BUSCA ===== */
+  .search-wrap {
+    background: var(--azul-escuro);
+    padding: 12px 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+  .search-inner { position: relative; }
+  .search-icon {
+    position: absolute; left: 13px; top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  .search-input {
+    width: 100%;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    color: var(--branco);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px; font-weight: 400;
+    padding: 10px 14px 10px 40px;
+    outline: none;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .search-input::placeholder { color: rgba(255,255,255,0.25); }
+  .search-input:focus {
+    border-color: var(--azul-accent);
+    background: rgba(255,255,255,0.09);
+  }
+
+  /* ===== LISTA ===== */
+  .list-container { background: var(--cinza-bg); min-height: 60vh; }
+
+  .month-header {
+    background: var(--azul-escuro);
+    padding: 11px 18px;
+    display: flex; align-items: center; gap: 10px;
+    position: sticky; top: 0; z-index: 10;
+    border-bottom: 2px solid var(--azul-vivo);
+  }
+  .month-header-name {
+    font-family: 'Merriweather', serif;
+    font-size: 15px; font-weight: 700;
+    color: var(--branco);
+  }
+  .month-header-pill {
+    background: var(--logo-icon);
+    color: var(--branco);
+    font-size: 9px; font-weight: 700;
+    letter-spacing: 1.5px; text-transform: uppercase;
+    padding: 3px 9px; border-radius: 99px;
+  }
+  .month-header-count {
+    margin-left: auto;
+    font-size: 11px; font-weight: 600;
+    color: var(--cinza-txt);
+  }
+  .month-header-count span { color: var(--ouro); }
+
+  .reading-item {
+    display: flex; align-items: center; gap: 12px;
+    padding: 13px 18px;
+    border-bottom: 1px solid var(--cinza-linha);
+    cursor: pointer;
+    transition: background 0.15s;
+    position: relative;
+    background: var(--branco);
+  }
+  .reading-item:hover { background: #eef3ff; }
+  .reading-item.done { background: #f5f9f5; }
+  .reading-item.today {
+    background: linear-gradient(90deg, #eef3ff, var(--branco));
+    border-left: 4px solid var(--azul-vivo);
+  }
+
+  /* número do dia — círculo */
+  .day-circle {
+    width: 42px; height: 42px; border-radius: 50%;
+    background: var(--cinza-bg);
+    border: 2px solid var(--cinza-linha);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.2s;
+  }
+  .day-circle-num {
+    font-family: 'Merriweather', serif;
+    font-size: 14px; font-weight: 700;
+    color: var(--azul-vivo); line-height: 1;
+  }
+  .reading-item.today .day-circle {
+    background: var(--azul-vivo);
+    border-color: var(--azul-vivo);
+  }
+  .reading-item.today .day-circle-num { color: var(--branco); }
+  .reading-item.done .day-circle {
+    background: #e8f5e9;
+    border-color: #81c784;
+  }
+  .reading-item.done .day-circle-num { color: #388e3c; }
+
+  .day-info { flex: 1; min-width: 0; }
+  .day-date {
+    font-size: 9px; font-weight: 700;
+    letter-spacing: 2px; text-transform: uppercase;
+    color: var(--cinza-txt); margin-bottom: 2px;
+  }
+  .day-reading {
+    font-size: 15px; font-weight: 700;
+    color: var(--texto);
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .reading-item.done .day-reading {
+    color: #9cb0a0;
+    text-decoration: line-through;
+    text-decoration-color: rgba(0,0,0,0.2);
+  }
+
+  .today-badge {
+    font-size: 8px; font-weight: 800;
+    letter-spacing: 1.5px; text-transform: uppercase;
+    background: var(--azul-vivo); color: var(--branco);
+    padding: 3px 8px; border-radius: 99px;
+    flex-shrink: 0;
+  }
+
+  .check-btn {
+    width: 30px; height: 30px; border-radius: 50%;
+    border: 2px solid var(--cinza-linha);
+    background: var(--branco);
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer; flex-shrink: 0;
+    transition: all 0.2s;
+  }
+  .check-btn:hover { border-color: var(--azul-claro); background: #eef3ff; }
+  .reading-item.done .check-btn {
+    background: #4caf50; border-color: #4caf50;
+  }
+  .check-icon { display: none; }
+  .reading-item.done .check-icon { display: block; }
+
+  /* empty */
+  .empty-state {
+    text-align: center; padding: 70px 24px; color: var(--cinza-txt);
+  }
+  .empty-state p { font-size: 14px; margin-top: 12px; }
+
+  /* ===== DRAWER ===== */
+  .drawer-overlay {
+    position: fixed; inset: 0;
+    background: rgba(10,22,40,0.7);
+    z-index: 300; opacity: 0; pointer-events: none;
+    transition: opacity 0.3s;
+    backdrop-filter: blur(4px);
+  }
+  .drawer-overlay.open { opacity: 1; pointer-events: all; }
+
+  .drawer {
+    position: fixed; bottom: 0; left: 0; right: 0;
+    background: var(--branco);
+    border-radius: 20px 20px 0 0;
+    z-index: 400; max-height: 92vh;
+    display: flex; flex-direction: column;
+    transform: translateY(100%);
+    transition: transform 0.38s cubic-bezier(.32,.72,0,1);
+    box-shadow: 0 -12px 50px rgba(10,22,40,0.4);
+  }
+  .drawer.open { transform: translateY(0); }
+
+  .drawer-handle {
+    width: 40px; height: 4px;
+    background: var(--cinza-linha);
+    border-radius: 99px;
+    margin: 12px auto 0; flex-shrink: 0;
+  }
+
+  .drawer-header {
+    padding: 16px 18px 14px;
+    border-bottom: 1px solid var(--cinza-linha);
+    flex-shrink: 0;
+    display: flex; align-items: flex-start; gap: 12px;
+  }
+  .drawer-icon {
+    width: 44px; height: 44px; border-radius: 12px;
+    background: var(--logo-icon);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .drawer-header-info { flex: 1; min-width: 0; }
+  .drawer-day-label {
+    font-size: 9px; font-weight: 700;
+    letter-spacing: 2.5px; text-transform: uppercase;
+    color: var(--cinza-txt); margin-bottom: 3px;
+  }
+  .drawer-title {
+    font-family: 'Merriweather', serif;
+    font-size: 20px; font-weight: 900;
+    color: var(--azul-escuro); line-height: 1.2;
+  }
+  .drawer-close {
+    background: var(--cinza-bg); border: none;
+    border-radius: 50%; width: 34px; height: 34px;
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer; font-size: 17px; color: var(--cinza-txt);
+    flex-shrink: 0; margin-top: 4px;
+    transition: background 0.15s;
+  }
+  .drawer-close:hover { background: var(--cinza-linha); }
+
+  .drawer-actions {
+    padding: 10px 18px;
+    border-bottom: 1px solid var(--cinza-linha);
+    flex-shrink: 0;
+    display: flex; gap: 10px; align-items: center;
+  }
+  .btn-read {
+    flex: 1;
+    background: linear-gradient(135deg, var(--azul-vivo), var(--azul-accent));
+    color: var(--branco);
+    border: none; border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px; font-weight: 700;
+    padding: 12px 16px;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    transition: opacity 0.2s, transform 0.1s;
+    box-shadow: 0 4px 14px rgba(18,64,160,0.35);
+  }
+  .btn-read:hover { opacity: 0.9; transform: translateY(-1px); }
+  .btn-read:active { transform: translateY(0); }
+  .btn-read:disabled { opacity: 0.55; cursor: not-allowed; transform: none; }
+
+  .btn-mark {
+    background: transparent;
+    border: 2px solid var(--cinza-linha);
+    color: var(--cinza-txt);
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px; font-weight: 700;
+    padding: 10px 14px;
+    cursor: pointer;
+    display: flex; align-items: center; gap: 6px;
+    white-space: nowrap;
+    transition: all 0.2s;
+  }
+  .btn-mark:hover { border-color: var(--azul-claro); color: var(--azul-vivo); }
+  .btn-mark.marked {
+    background: #e8f5e9; border-color: #81c784;
+    color: #388e3c;
+  }
+
+  .drawer-body {
+    flex: 1; overflow-y: auto;
+    padding: 20px 18px 48px;
+    scroll-behavior: smooth;
+  }
+  .drawer-body::-webkit-scrollbar { width: 3px; }
+  .drawer-body::-webkit-scrollbar-thumb { background: var(--cinza-linha); border-radius: 99px; }
+
+  .reading-loading {
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    padding: 50px 20px; gap: 16px;
+  }
+  .loading-spinner {
+    width: 36px; height: 36px;
+    border: 3px solid var(--cinza-linha);
+    border-top-color: var(--azul-vivo);
+    border-radius: 50%;
+    animation: spin 0.75s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .loading-text { font-size: 13px; color: var(--cinza-txt); text-align: center; line-height: 1.7; }
+
+  /* Conteúdo bíblico */
+  .passage-content { font-size: 16px; line-height: 1.9; color: #1e2a3a; }
+  .passage-content .verse-num {
+    font-size: 9px; font-weight: 800;
+    color: var(--azul-vivo);
+    vertical-align: super; margin-right: 3px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0;
+  }
+  .passage-content .chapter-title {
+    font-family: 'Merriweather', serif;
+    font-size: 17px; font-weight: 900;
+    color: var(--azul-escuro);
+    margin: 28px 0 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--cinza-linha);
+    display: flex; align-items: center; gap: 10px;
+  }
+  .passage-content .chapter-title::before {
+    content: '';
+    width: 4px; height: 20px;
+    background: var(--azul-vivo);
+    border-radius: 99px;
+    flex-shrink: 0;
+  }
+  .passage-content .chapter-title:first-child { margin-top: 0; }
+  .passage-content p { margin-bottom: 8px; }
+  .passage-content .verse-block { margin-bottom: 6px; }
+  .passage-note {
+    margin-top: 28px;
+    padding: 13px 15px;
+    background: #f0f5ff;
+    border-left: 3px solid var(--azul-claro);
+    border-radius: 0 8px 8px 0;
+    font-size: 11px; color: var(--cinza-txt); line-height: 1.6;
+  }
+
+  /* ===== FAB ===== */
+  .fab {
+    position: fixed; bottom: 24px; right: 20px;
+    background: linear-gradient(135deg, var(--azul-vivo), var(--azul-accent));
+    color: var(--branco);
+    border: none; border-radius: 50%;
+    width: 54px; height: 54px;
+    font-size: 22px;
+    cursor: pointer;
+    box-shadow: 0 6px 24px rgba(18,64,160,0.5);
+    display: flex; align-items: center; justify-content: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    z-index: 100;
+  }
+  .fab:hover { transform: scale(1.08); box-shadow: 0 8px 30px rgba(18,64,160,0.65); }
+
+  /* ===== TOAST ===== */
+  .toast {
+    position: fixed; bottom: 90px; left: 50%;
+    transform: translateX(-50%) translateY(16px);
+    background: var(--azul-escuro); color: var(--ouro-claro);
+    border: 1px solid rgba(212,168,67,0.4);
+    border-radius: 10px; padding: 10px 22px;
+    font-size: 12px; font-weight: 700; letter-spacing: 1px;
+    opacity: 0; pointer-events: none;
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 500; white-space: nowrap;
+  }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+  /* ===== FOOTER ===== */
+  .footer {
+    background: var(--azul-escuro);
+    padding: 28px 20px 36px;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+  .footer-logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px; font-weight: 800;
+    color: var(--branco); letter-spacing: 1px;
+    margin-bottom: 6px;
+  }
+  .footer-logo span { color: var(--ouro); }
+  .footer-address {
+    font-size: 10px; color: rgba(255,255,255,0.28);
+    letter-spacing: 0.8px; line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  .footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .social-btn {
+    display: inline-flex; align-items: center; gap: 7px;
+    padding: 9px 15px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px; font-weight: 700;
+    letter-spacing: 0.3px;
+    text-decoration: none;
+    transition: transform 0.18s, opacity 0.18s;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  .social-btn:hover { transform: translateY(-2px); opacity: 0.88; }
+  .social-btn.site {
+    background: rgba(255,255,255,0.07);
+    border-color: rgba(255,255,255,0.13);
+    color: rgba(255,255,255,0.65);
+  }
+  .social-btn.instagram {
+    background: linear-gradient(135deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+    color: #fff;
+  }
+  .social-btn.facebook {
+    background: #1877f2;
+    color: #fff;
+  }
+  .social-btn svg { flex-shrink: 0; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-topbar">Igreja Batista Shema · Fortaleza – CE</div>
+  <div class="header-main">
+    <div class="logo-mark">
+      <img src="data:image/jpeg;base64,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" alt="Igreja Batista Shema" class="logo-img">
+    </div>
+    <div class="header-text">
+      <div class="church-name">Igreja Batista Shema</div>
+      <div class="plan-title">Plano de Leitura<br><span>Bíblica 2026</span></div>
+      <div class="plan-sub">365 dias · Toda a Bíblia · Fortaleza–CE</div>
+    </div>
+    <div class="header-verse">
+      <p>"Ouve, ó Israel: o Senhor nosso Deus é o único Senhor."</p>
+      <cite>Deuteronômio 6:4 · Shema Israel</cite>
+    </div>
+  </div>
+</header>
+
+<!-- PROGRESSO -->
+<div class="progress-section">
+  <div class="progress-top">
+    <span class="progress-label">Progresso 2026</span>
+    <div class="progress-count" id="progressCount">0<sup> / 365</sup></div>
+  </div>
+  <div class="progress-bar-bg">
+    <div class="progress-bar-fill" id="progressBar" style="width:0%"></div>
+  </div>
+  <div class="progress-pct" id="progressPct">0% concluído</div>
+  <div class="stats-row" id="statsRow">
+    <div class="stat-item">
+      <div class="stat-num" id="statDone">0</div>
+      <div class="stat-lbl">Lidas</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num" id="statLeft">365</div>
+      <div class="stat-lbl">Restantes</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num" id="statStreak">0</div>
+      <div class="stat-lbl">Dias seguidos</div>
+    </div>
+  </div>
+</div>
+
+<!-- MESES -->
+<div class="tabs-wrapper">
+  <div class="tabs" id="tabsContainer"></div>
+</div>
+
+<!-- BUSCA -->
+<div class="search-wrap">
+  <div class="search-inner">
+    <svg class="search-icon" width="16" height="16" fill="none" viewBox="0 0 24 24">
+      <circle cx="11" cy="11" r="7" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+      <path d="M20 20l-3-3" stroke="rgba(255,255,255,0.3)" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+    <input type="search" class="search-input" id="searchInput" placeholder="Buscar livro ou passagem…">
+  </div>
+</div>
+
+<!-- LISTA -->
+<div class="list-container" id="listContainer"></div>
+
+<!-- DRAWER -->
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<div class="drawer" id="drawer">
+  <div class="drawer-handle"></div>
+  <div class="drawer-header">
+    <div class="drawer-icon">
+      <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+        <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <div class="drawer-header-info">
+      <div class="drawer-day-label" id="drawerDayLabel">Dia 1 · 01/JAN</div>
+      <div class="drawer-title" id="drawerTitle">Gênesis 1-3</div>
+    </div>
+    <button class="drawer-close" id="drawerClose">✕</button>
+  </div>
+  <div class="drawer-actions">
+    <button class="btn-read" id="btnRead">
+      <svg width="16" height="16" fill="none" viewBox="0 0 24 24">
+        <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Ler passagem
+    </button>
+    <button class="btn-mark" id="btnMarkDrawer">
+      <svg width="15" height="15" fill="none" viewBox="0 0 24 24">
+        <path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span id="btnMarkText">Marcar</span>
+    </button>
+  </div>
+  <div class="drawer-body" id="drawerBody">
+    <div style="text-align:center;padding:60px 20px;color:var(--cinza-txt);font-size:14px;line-height:1.8;">
+      Clique em <strong style="color:var(--azul-vivo)">"Ler passagem"</strong><br>para carregar o texto bíblico com IA.
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-logo">IB <span>SHEMA</span></div>
+  <div class="footer-address">
+    Rua Antonio Rocha, 395 · Jd das Oliveiras · Fortaleza–CE
+  </div>
+  <div class="footer-social">
+
+    <a href="https://www.instagram.com/igrejashema/" target="_blank" class="social-btn instagram">
+      <svg width="14" height="14" fill="none" viewBox="0 0 24 24">
+        <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/>
+        <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+        <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+      </svg>
+      @igrejashema
+    </a>
+    <a href="https://www.facebook.com/igrejabatistashema" target="_blank" class="social-btn facebook">
+      <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.883v2.258h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
+      </svg>
+      /igrejabatistashema
+    </a>
+  </div>
+</div>
+
+<button class="fab" id="todayBtn" title="Ir para hoje">📅</button>
+<div class="toast" id="toast"></div>
+
+<script>
+const PLAN = [
+  {d:1,date:"01/JAN",r:"Gênesis 1-3"},{d:2,date:"02/JAN",r:"Gênesis 4-6"},{d:3,date:"03/JAN",r:"Gênesis 7-9"},
+  {d:4,date:"04/JAN",r:"Gênesis 10-12"},{d:5,date:"05/JAN",r:"Gênesis 13-16"},{d:6,date:"06/JAN",r:"Gênesis 17-19"},
+  {d:7,date:"07/JAN",r:"Gênesis 20-22"},{d:8,date:"08/JAN",r:"Gênesis 23-24"},{d:9,date:"09/JAN",r:"Gênesis 25-27"},
+  {d:10,date:"10/JAN",r:"Gênesis 28-30"},{d:11,date:"11/JAN",r:"Gênesis 31-32"},{d:12,date:"12/JAN",r:"Gênesis 33-35"},
+  {d:13,date:"13/JAN",r:"Gênesis 36-37"},{d:14,date:"14/JAN",r:"Gênesis 38-40"},{d:15,date:"15/JAN",r:"Gênesis 41-42"},
+  {d:16,date:"16/JAN",r:"Gênesis 43-45"},{d:17,date:"17/JAN",r:"Gênesis 46-47"},{d:18,date:"18/JAN",r:"Gênesis 48-50"},
+  {d:19,date:"19/JAN",r:"Êxodo 1-4"},{d:20,date:"20/JAN",r:"Êxodo 5-7"},{d:21,date:"21/JAN",r:"Êxodo 8-10"},
+  {d:22,date:"22/JAN",r:"Êxodo 11-13"},{d:23,date:"23/JAN",r:"Êxodo 14-16"},{d:24,date:"24/JAN",r:"Êxodo 17-20"},
+  {d:25,date:"25/JAN",r:"Êxodo 21-23"},{d:26,date:"26/JAN",r:"Êxodo 24-26"},{d:27,date:"27/JAN",r:"Êxodo 27-29"},
+  {d:28,date:"28/JAN",r:"Êxodo 30-32"},{d:29,date:"29/JAN",r:"Êxodo 33-35"},{d:30,date:"30/JAN",r:"Êxodo 36-38"},
+  {d:31,date:"31/JAN",r:"Êxodo 39-40"},
+  {d:32,date:"01/FEV",r:"Levítico 1-4"},{d:33,date:"02/FEV",r:"Levítico 5-7"},{d:34,date:"03/FEV",r:"Levítico 8-10"},
+  {d:35,date:"04/FEV",r:"Levítico 11-13"},{d:36,date:"05/FEV",r:"Levítico 14-15"},{d:37,date:"06/FEV",r:"Levítico 16-18"},
+  {d:38,date:"07/FEV",r:"Levítico 19-21"},{d:39,date:"08/FEV",r:"Levítico 22-23"},{d:40,date:"09/FEV",r:"Levítico 24-25"},
+  {d:41,date:"10/FEV",r:"Levítico 26-27"},{d:42,date:"11/FEV",r:"Números 1-2"},{d:43,date:"12/FEV",r:"Números 3-4"},
+  {d:44,date:"13/FEV",r:"Números 5-7"},{d:45,date:"14/FEV",r:"Números 8-10"},{d:46,date:"15/FEV",r:"Números 11-13"},
+  {d:47,date:"16/FEV",r:"Números 14-15"},{d:48,date:"17/FEV",r:"Números 16-18"},{d:49,date:"18/FEV",r:"Números 19-21"},
+  {d:50,date:"19/FEV",r:"Números 22-24"},{d:51,date:"20/FEV",r:"Números 25-26"},{d:52,date:"21/FEV",r:"Números 27-29"},
+  {d:53,date:"22/FEV",r:"Números 30-32"},{d:54,date:"23/FEV",r:"Números 33-34"},{d:55,date:"24/FEV",r:"Números 35-36"},
+  {d:56,date:"25/FEV",r:"Deuteronômio 1-2"},{d:57,date:"26/FEV",r:"Deuteronômio 3-4"},{d:58,date:"27/FEV",r:"Deuteronômio 5-7"},
+  {d:59,date:"28/FEV",r:"Deuteronômio 8-11"},
+  {d:60,date:"01/MAR",r:"Deuteronômio 12-14"},{d:61,date:"02/MAR",r:"Deuteronômio 15-18"},{d:62,date:"03/MAR",r:"Deuteronômio 19-22"},
+  {d:63,date:"04/MAR",r:"Deuteronômio 23-26"},{d:64,date:"05/MAR",r:"Deuteronômio 27-28"},{d:65,date:"06/MAR",r:"Deuteronômio 29-31"},
+  {d:66,date:"07/MAR",r:"Deuteronômio 32-34"},{d:67,date:"08/MAR",r:"Josué 1-4"},{d:68,date:"09/MAR",r:"Josué 5-8"},
+  {d:69,date:"10/MAR",r:"Josué 9-11"},{d:70,date:"11/MAR",r:"Josué 12-14"},{d:71,date:"12/MAR",r:"Josué 15-16"},
+  {d:72,date:"13/MAR",r:"Josué 17-19"},{d:73,date:"14/MAR",r:"Josué 20-22"},{d:74,date:"15/MAR",r:"Josué 23-24"},
+  {d:75,date:"16/MAR",r:"Juízes 1-3"},{d:76,date:"17/MAR",r:"Juízes 4-6"},{d:77,date:"18/MAR",r:"Juízes 7-9"},
+  {d:78,date:"19/MAR",r:"Juízes 10-12"},{d:79,date:"20/MAR",r:"Juízes 13-16"},{d:80,date:"21/MAR",r:"Juízes 17-19"},
+  {d:81,date:"22/MAR",r:"Juízes 20-21"},{d:82,date:"23/MAR",r:"Rute 1-4"},{d:83,date:"24/MAR",r:"1 Samuel 1-3"},
+  {d:84,date:"25/MAR",r:"1 Samuel 4-7"},{d:85,date:"26/MAR",r:"1 Samuel 8-10"},{d:86,date:"27/MAR",r:"1 Samuel 11-14"},
+  {d:87,date:"28/MAR",r:"1 Samuel 15-17"},{d:88,date:"29/MAR",r:"1 Samuel 18-20"},{d:89,date:"30/MAR",r:"1 Samuel 21-24"},
+  {d:90,date:"31/MAR",r:"1 Samuel 25-27"},
+  {d:91,date:"01/ABR",r:"1 Samuel 28-31"},{d:92,date:"02/ABR",r:"2 Samuel 1-3"},{d:93,date:"03/ABR",r:"2 Samuel 4-7"},
+  {d:94,date:"04/ABR",r:"2 Samuel 8-11"},{d:95,date:"05/ABR",r:"2 Samuel 12-14"},{d:96,date:"06/ABR",r:"2 Samuel 15-17"},
+  {d:97,date:"07/ABR",r:"2 Samuel 18-19"},{d:98,date:"08/ABR",r:"2 Samuel 20-22"},{d:99,date:"09/ABR",r:"2 Samuel 23-24"},
+  {d:100,date:"10/ABR",r:"1 Reis 1-2"},{d:101,date:"11/ABR",r:"1 Reis 3-5"},{d:102,date:"12/ABR",r:"1 Reis 6-7"},
+  {d:103,date:"13/ABR",r:"1 Reis 8-9"},{d:104,date:"14/ABR",r:"1 Reis 10-11"},{d:105,date:"15/ABR",r:"1 Reis 12-14"},
+  {d:106,date:"16/ABR",r:"1 Reis 15-17"},{d:107,date:"17/ABR",r:"1 Reis 18-20"},{d:108,date:"18/ABR",r:"1 Reis 21-22"},
+  {d:109,date:"19/ABR",r:"2 Reis 1-4"},{d:110,date:"20/ABR",r:"2 Reis 5-7"},{d:111,date:"21/ABR",r:"2 Reis 8-10"},
+  {d:112,date:"22/ABR",r:"2 Reis 11-14"},{d:113,date:"23/ABR",r:"2 Reis 15-17"},{d:114,date:"24/ABR",r:"2 Reis 18-19"},
+  {d:115,date:"25/ABR",r:"2 Reis 20-23"},{d:116,date:"26/ABR",r:"2 Reis 24-25"},{d:117,date:"27/ABR",r:"1 Crônicas 1-2"},
+  {d:118,date:"28/ABR",r:"1 Crônicas 3-5"},{d:119,date:"29/ABR",r:"1 Crônicas 6"},{d:120,date:"30/ABR",r:"1 Crônicas 7-8"},
+  {d:121,date:"01/MAI",r:"1 Crônicas 9-11"},{d:122,date:"02/MAI",r:"1 Crônicas 12-15"},{d:123,date:"03/MAI",r:"1 Crônicas 16-18"},
+  {d:124,date:"04/MAI",r:"1 Crônicas 19-22"},{d:125,date:"05/MAI",r:"1 Crônicas 23-25"},{d:126,date:"06/MAI",r:"1 Crônicas 26-29"},
+  {d:127,date:"07/MAI",r:"2 Crônicas 1-4"},{d:128,date:"08/MAI",r:"2 Crônicas 5-7"},{d:129,date:"09/MAI",r:"2 Crônicas 8-11"},
+  {d:130,date:"10/MAI",r:"2 Crônicas 12-15"},{d:131,date:"11/MAI",r:"2 Crônicas 16-19"},{d:132,date:"12/MAI",r:"2 Crônicas 20-23"},
+  {d:133,date:"13/MAI",r:"2 Crônicas 24-26"},{d:134,date:"14/MAI",r:"2 Crônicas 27-29"},{d:135,date:"15/MAI",r:"2 Crônicas 30-32"},
+  {d:136,date:"16/MAI",r:"2 Crônicas 33-36"},{d:137,date:"17/MAI",r:"Esdras 1-2"},{d:138,date:"18/MAI",r:"Esdras 3-6"},
+  {d:139,date:"19/MAI",r:"Esdras 7-10"},{d:140,date:"20/MAI",r:"Neemias 1-4"},{d:141,date:"21/MAI",r:"Neemias 5-7"},
+  {d:142,date:"22/MAI",r:"Neemias 8-10"},{d:143,date:"23/MAI",r:"Neemias 11-13"},{d:144,date:"24/MAI",r:"Ester 1-4"},
+  {d:145,date:"25/MAI",r:"Ester 5-10"},{d:146,date:"26/MAI",r:"Jó 1-2"},{d:147,date:"27/MAI",r:"Jó 3-5"},
+  {d:148,date:"28/MAI",r:"Jó 6-8"},{d:149,date:"29/MAI",r:"Jó 9-11"},{d:150,date:"30/MAI",r:"Jó 12-15"},
+  {d:151,date:"31/MAI",r:"Jó 16-20"},
+  {d:152,date:"01/JUN",r:"Jó 21-25"},{d:153,date:"02/JUN",r:"Jó 26-28"},{d:154,date:"03/JUN",r:"Jó 29-31"},
+  {d:155,date:"04/JUN",r:"Jó 32-34"},{d:156,date:"05/JUN",r:"Jó 35-37"},{d:157,date:"06/JUN",r:"Jó 38-40"},
+  {d:158,date:"07/JUN",r:"Jó 41-42"},{d:159,date:"08/JUN",r:"Salmos 1-7"},{d:160,date:"09/JUN",r:"Salmos 8-14"},
+  {d:161,date:"10/JUN",r:"Salmos 15-18"},{d:162,date:"11/JUN",r:"Salmos 19-23"},{d:163,date:"12/JUN",r:"Salmos 24-29"},
+  {d:164,date:"13/JUN",r:"Salmos 30-34"},{d:165,date:"14/JUN",r:"Salmos 35-37"},{d:166,date:"15/JUN",r:"Salmos 38-42"},
+  {d:167,date:"16/JUN",r:"Salmos 43-47"},{d:168,date:"17/JUN",r:"Salmos 48-53"},{d:169,date:"18/JUN",r:"Salmos 54-59"},
+  {d:170,date:"19/JUN",r:"Salmos 60-66"},{d:171,date:"20/JUN",r:"Salmos 67-69"},{d:172,date:"21/JUN",r:"Salmos 70-73"},
+  {d:173,date:"22/JUN",r:"Salmos 74-78"},{d:174,date:"23/JUN",r:"Salmos 79-83"},{d:175,date:"24/JUN",r:"Salmos 84-89"},
+  {d:176,date:"25/JUN",r:"Salmos 90-94"},{d:177,date:"26/JUN",r:"Salmos 95-102"},{d:178,date:"27/JUN",r:"Salmos 103-105"},
+  {d:179,date:"28/JUN",r:"Salmos 106-107"},{d:180,date:"29/JUN",r:"Salmos 108-113"},{d:181,date:"30/JUN",r:"Salmos 114-118"},
+  {d:182,date:"01/JUL",r:"Salmos 119"},{d:183,date:"02/JUL",r:"Salmos 120-130"},{d:184,date:"03/JUL",r:"Salmos 131-136"},
+  {d:185,date:"04/JUL",r:"Salmos 137-143"},{d:186,date:"05/JUL",r:"Salmos 144-148"},{d:187,date:"06/JUL",r:"Salmos 149-150"},
+  {d:188,date:"07/JUL",r:"Provérbios 1-3"},{d:189,date:"08/JUL",r:"Provérbios 4-6"},{d:190,date:"09/JUL",r:"Provérbios 7-9"},
+  {d:191,date:"10/JUL",r:"Provérbios 10-12"},{d:192,date:"11/JUL",r:"Provérbios 13-15"},{d:193,date:"12/JUL",r:"Provérbios 16-18"},
+  {d:194,date:"13/JUL",r:"Provérbios 19-21"},{d:195,date:"14/JUL",r:"Provérbios 22-24"},{d:196,date:"15/JUL",r:"Provérbios 25-27"},
+  {d:197,date:"16/JUL",r:"Provérbios 28-31"},{d:198,date:"17/JUL",r:"Eclesiastes 1-4"},{d:199,date:"18/JUL",r:"Eclesiastes 5-8"},
+  {d:200,date:"19/JUL",r:"Eclesiastes 9-12"},{d:201,date:"20/JUL",r:"Cantares 1-5"},{d:202,date:"21/JUL",r:"Cantares 6-8"},
+  {d:203,date:"22/JUL",r:"Isaías 1-3"},{d:204,date:"23/JUL",r:"Isaías 4-7"},{d:205,date:"24/JUL",r:"Isaías 8-10"},
+  {d:206,date:"25/JUL",r:"Isaías 11-14"},{d:207,date:"26/JUL",r:"Isaías 15-20"},{d:208,date:"27/JUL",r:"Isaías 21-24"},
+  {d:209,date:"28/JUL",r:"Isaías 25-28"},{d:210,date:"29/JUL",r:"Isaías 29-32"},{d:211,date:"30/JUL",r:"Isaías 33-36"},
+  {d:212,date:"31/JUL",r:"Isaías 37-40"},
+  {d:213,date:"01/AGO",r:"Isaías 41-43"},{d:214,date:"02/AGO",r:"Isaías 44-47"},{d:215,date:"03/AGO",r:"Isaías 48-51"},
+  {d:216,date:"04/AGO",r:"Isaías 52-57"},{d:217,date:"05/AGO",r:"Isaías 58-62"},{d:218,date:"06/AGO",r:"Isaías 63-66"},
+  {d:219,date:"07/AGO",r:"Jeremias 1-3"},{d:220,date:"08/AGO",r:"Jeremias 4-6"},{d:221,date:"09/AGO",r:"Jeremias 7-9"},
+  {d:222,date:"10/AGO",r:"Jeremias 10-13"},{d:223,date:"11/AGO",r:"Jeremias 14-17"},{d:224,date:"12/AGO",r:"Jeremias 18-22"},
+  {d:225,date:"13/AGO",r:"Jeremias 23-25"},{d:226,date:"14/AGO",r:"Jeremias 26-29"},{d:227,date:"15/AGO",r:"Jeremias 30-32"},
+  {d:228,date:"16/AGO",r:"Jeremias 33-36"},{d:229,date:"17/AGO",r:"Jeremias 37-40"},{d:230,date:"18/AGO",r:"Jeremias 41-44"},
+  {d:231,date:"19/AGO",r:"Jeremias 45-48"},{d:232,date:"20/AGO",r:"Jeremias 49-50"},{d:233,date:"21/AGO",r:"Jeremias 51-52"},
+  {d:234,date:"22/AGO",r:"Lamentações 1-3"},{d:235,date:"23/AGO",r:"Lamentações 4-5"},{d:236,date:"24/AGO",r:"Ezequiel 1-4"},
+  {d:237,date:"25/AGO",r:"Ezequiel 5-8"},{d:238,date:"26/AGO",r:"Ezequiel 9-12"},{d:239,date:"27/AGO",r:"Ezequiel 13-16"},
+  {d:240,date:"28/AGO",r:"Ezequiel 17-20"},{d:241,date:"29/AGO",r:"Ezequiel 21-23"},{d:242,date:"30/AGO",r:"Ezequiel 24-27"},
+  {d:243,date:"31/AGO",r:"Ezequiel 28-30"},
+  {d:244,date:"01/SET",r:"Ezequiel 31-33"},{d:245,date:"02/SET",r:"Ezequiel 34-36"},{d:246,date:"03/SET",r:"Ezequiel 37-39"},
+  {d:247,date:"04/SET",r:"Ezequiel 40-42"},{d:248,date:"05/SET",r:"Ezequiel 43-45"},{d:249,date:"06/SET",r:"Ezequiel 46-48"},
+  {d:250,date:"07/SET",r:"Daniel 1-3"},{d:251,date:"08/SET",r:"Daniel 4-6"},{d:252,date:"09/SET",r:"Daniel 7-9"},
+  {d:253,date:"10/SET",r:"Daniel 10-12"},{d:254,date:"11/SET",r:"Oséias 1-5"},{d:255,date:"12/SET",r:"Oséias 6-10"},
+  {d:256,date:"13/SET",r:"Oséias 11-14"},{d:257,date:"14/SET",r:"Joel 1-3"},{d:258,date:"15/SET",r:"Amós 1-5"},
+  {d:259,date:"16/SET",r:"Amós 6-9"},{d:260,date:"17/SET",r:"Obadias 1"},{d:261,date:"18/SET",r:"Jonas 1-4"},
+  {d:262,date:"19/SET",r:"Miquéias 1-7"},{d:263,date:"20/SET",r:"Naum 1-3"},{d:264,date:"21/SET",r:"Habacuque 1-3"},
+  {d:265,date:"22/SET",r:"Sofonias 1-3"},{d:266,date:"23/SET",r:"Ageu 1-2"},{d:267,date:"24/SET",r:"Zacarias 1-6"},
+  {d:268,date:"25/SET",r:"Zacarias 7-11"},{d:269,date:"26/SET",r:"Zacarias 12-14"},{d:270,date:"27/SET",r:"Malaquias 1-4"},
+  {d:271,date:"28/SET",r:"Mateus 1-4"},{d:272,date:"29/SET",r:"Mateus 5-6"},{d:273,date:"30/SET",r:"Mateus 7-9"},
+  {d:274,date:"01/OUT",r:"Mateus 10-11"},{d:275,date:"02/OUT",r:"Mateus 12-13"},{d:276,date:"03/OUT",r:"Mateus 14-15"},
+  {d:277,date:"04/OUT",r:"Mateus 16-18"},{d:278,date:"05/OUT",r:"Mateus 19-21"},{d:279,date:"06/OUT",r:"Mateus 22-23"},
+  {d:280,date:"07/OUT",r:"Mateus 24-25"},{d:281,date:"08/OUT",r:"Mateus 26"},{d:282,date:"09/OUT",r:"Mateus 27-28"},
+  {d:283,date:"10/OUT",r:"Marcos 1-2"},{d:284,date:"11/OUT",r:"Marcos 3-4"},{d:285,date:"12/OUT",r:"Marcos 5-6"},
+  {d:286,date:"13/OUT",r:"Marcos 7-8"},{d:287,date:"14/OUT",r:"Marcos 9-10"},{d:288,date:"15/OUT",r:"Marcos 11-12"},
+  {d:289,date:"16/OUT",r:"Marcos 13-14"},{d:290,date:"17/OUT",r:"Marcos 15-16"},{d:291,date:"18/OUT",r:"Lucas 1"},
+  {d:292,date:"19/OUT",r:"Lucas 2-3"},{d:293,date:"20/OUT",r:"Lucas 4-5"},{d:294,date:"21/OUT",r:"Lucas 6-7"},
+  {d:295,date:"22/OUT",r:"Lucas 8-9"},{d:296,date:"23/OUT",r:"Lucas 10-11"},{d:297,date:"24/OUT",r:"Lucas 12-13"},
+  {d:298,date:"25/OUT",r:"Lucas 14-16"},{d:299,date:"26/OUT",r:"Lucas 17-18"},{d:300,date:"27/OUT",r:"Lucas 19-20"},
+  {d:301,date:"28/OUT",r:"Lucas 21-22"},{d:302,date:"29/OUT",r:"Lucas 23-24"},{d:303,date:"30/OUT",r:"João 1-2"},
+  {d:304,date:"31/OUT",r:"João 3-4"},
+  {d:305,date:"01/NOV",r:"João 5-6"},{d:306,date:"02/NOV",r:"João 7-8"},{d:307,date:"03/NOV",r:"João 9-10"},
+  {d:308,date:"04/NOV",r:"João 11-12"},{d:309,date:"05/NOV",r:"João 13-15"},{d:310,date:"06/NOV",r:"João 16-18"},
+  {d:311,date:"07/NOV",r:"João 19-21"},{d:312,date:"08/NOV",r:"Atos 1-2"},{d:313,date:"09/NOV",r:"Atos 3-5"},
+  {d:314,date:"10/NOV",r:"Atos 6-7"},{d:315,date:"11/NOV",r:"Atos 8-9"},{d:316,date:"12/NOV",r:"Atos 10-11"},
+  {d:317,date:"13/NOV",r:"Atos 12-13"},{d:318,date:"14/NOV",r:"Atos 14-16"},{d:319,date:"15/NOV",r:"Atos 17-19"},
+  {d:320,date:"16/NOV",r:"Atos 20-21"},{d:321,date:"17/NOV",r:"Atos 22-24"},{d:322,date:"18/NOV",r:"Atos 25-28"},
+  {d:323,date:"19/NOV",r:"Romanos 1-3"},{d:324,date:"20/NOV",r:"Romanos 4-7"},{d:325,date:"21/NOV",r:"Romanos 8-9"},
+  {d:326,date:"22/NOV",r:"Romanos 10-12"},{d:327,date:"23/NOV",r:"Romanos 13-16"},{d:328,date:"24/NOV",r:"1 Coríntios 1-4"},
+  {d:329,date:"25/NOV",r:"1 Coríntios 5-7"},{d:330,date:"26/NOV",r:"1 Coríntios 8-10"},{d:331,date:"27/NOV",r:"1 Coríntios 11-13"},
+  {d:332,date:"28/NOV",r:"1 Coríntios 14-16"},{d:333,date:"29/NOV",r:"2 Coríntios 1-4"},{d:334,date:"30/NOV",r:"2 Coríntios 5-8"},
+  {d:335,date:"01/DEZ",r:"2 Coríntios 9-13"},{d:336,date:"02/DEZ",r:"Gálatas 1-3"},{d:337,date:"03/DEZ",r:"Gálatas 4-6"},
+  {d:338,date:"04/DEZ",r:"Efésios 1-4"},{d:339,date:"05/DEZ",r:"Efésios 5-6"},{d:340,date:"06/DEZ",r:"Filipenses 1-4"},
+  {d:341,date:"07/DEZ",r:"Colossenses 1-4"},{d:342,date:"08/DEZ",r:"1 Tessalonicenses 1-5"},{d:343,date:"09/DEZ",r:"2 Tessalonicenses 1-3"},
+  {d:344,date:"10/DEZ",r:"1 Timóteo 1-6"},{d:345,date:"11/DEZ",r:"2 Timóteo 1-4"},{d:346,date:"12/DEZ",r:"Tito 1-3"},
+  {d:347,date:"13/DEZ",r:"Filemom 1"},{d:348,date:"14/DEZ",r:"Hebreus 1-5"},{d:349,date:"15/DEZ",r:"Hebreus 6-9"},
+  {d:350,date:"16/DEZ",r:"Hebreus 10-11"},{d:351,date:"17/DEZ",r:"Hebreus 12-13"},{d:352,date:"18/DEZ",r:"Tiago 1-5"},
+  {d:353,date:"19/DEZ",r:"1 Pedro 1-3"},{d:354,date:"20/DEZ",r:"1 Pedro 4-5"},{d:355,date:"21/DEZ",r:"2 Pedro 1-3"},
+  {d:356,date:"22/DEZ",r:"1 João 1-5"},{d:357,date:"23/DEZ",r:"2 João 1"},{d:358,date:"24/DEZ",r:"3 João 1"},
+  {d:359,date:"25/DEZ",r:"Judas 1"},{d:360,date:"26/DEZ",r:"Apocalipse 1-4"},{d:361,date:"27/DEZ",r:"Apocalipse 5-8"},
+  {d:362,date:"28/DEZ",r:"Apocalipse 9-12"},{d:363,date:"29/DEZ",r:"Apocalipse 13-16"},{d:364,date:"30/DEZ",r:"Apocalipse 17-19"},
+  {d:365,date:"31/DEZ",r:"Apocalipse 20-22"},
+];
+
+const MONTHS = [
+  {key:"JAN",name:"Janeiro",start:1,end:31},{key:"FEV",name:"Fevereiro",start:32,end:59},
+  {key:"MAR",name:"Março",start:60,end:90},{key:"ABR",name:"Abril",start:91,end:120},
+  {key:"MAI",name:"Maio",start:121,end:151},{key:"JUN",name:"Junho",start:152,end:181},
+  {key:"JUL",name:"Julho",start:182,end:212},{key:"AGO",name:"Agosto",start:213,end:243},
+  {key:"SET",name:"Setembro",start:244,end:273},{key:"OUT",name:"Outubro",start:274,end:304},
+  {key:"NOV",name:"Novembro",start:305,end:334},{key:"DEZ",name:"Dezembro",start:335,end:365},
+];
+
+const STORAGE_KEY = 'ibshema-plano-2026';
+let done = new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'));
+let activeMonth = null;
+let searchQuery = '';
+let passageCache = {};
+let currentDrawerItem = null;
+
+function getTodayDay() {
+  const now = new Date();
+  const start = new Date(2026, 0, 1);
+  const diff = Math.floor((now - start) / 86400000);
+  return Math.max(1, Math.min(365, diff + 1));
+}
+const todayDay = getTodayDay();
+
+function saveDone() { localStorage.setItem(STORAGE_KEY, JSON.stringify([...done])); }
+
+function calcStreak() {
+  let streak = 0;
+  for (let d = todayDay; d >= 1; d--) {
+    if (done.has(d)) streak++;
+    else break;
+  }
+  return streak;
+}
+
+function updateProgress() {
+  const count = done.size;
+  const pct = Math.round(count / 365 * 100);
+  document.getElementById('progressCount').innerHTML = `${count}<sup> / 365</sup>`;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressPct').textContent = pct + '% concluído · ' + (365 - count) + ' restantes';
+  document.getElementById('statDone').textContent = count;
+  document.getElementById('statLeft').textContent = 365 - count;
+  document.getElementById('statStreak').textContent = calcStreak();
+}
+
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2000);
+}
+
+function buildTabs() {
+  const tabs = document.getElementById('tabsContainer');
+  tabs.innerHTML = '';
+  const all = document.createElement('button');
+  all.className = 'tab-btn' + (activeMonth === null ? ' active' : '');
+  all.textContent = 'Todos';
+  all.onclick = () => { activeMonth = null; buildTabs(); renderList(); };
+  tabs.appendChild(all);
+  MONTHS.forEach(m => {
+    const btn = document.createElement('button');
+    btn.className = 'tab-btn' + (activeMonth === m.key ? ' active' : '');
+    btn.textContent = m.name.substring(0,3);
+    btn.onclick = () => { activeMonth = m.key; buildTabs(); renderList(); };
+    tabs.appendChild(btn);
+  });
+}
+
+function buildItem(item) {
+  const isDone = done.has(item.d);
+  const isToday = item.d === todayDay;
+  return `<div class="reading-item${isDone?' done':''}${isToday?' today':''}" id="day-${item.d}">
+    <div class="day-circle">
+      <span class="day-circle-num">${item.d}</span>
+    </div>
+    <div class="day-info">
+      <div class="day-date">${item.date}</div>
+      <div class="day-reading">${item.r}</div>
+    </div>
+    ${isToday ? '<span class="today-badge">HOJE</span>' : ''}
+    <button class="check-btn" data-day="${item.d}" title="Marcar como lida">
+      <svg class="check-icon" width="14" height="14" fill="none" viewBox="0 0 24 24">
+        <path d="M5 13l4 4L19 7" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </div>`;
+}
+
+function renderList() {
+  const container = document.getElementById('listContainer');
+  let filtered = PLAN;
+  if (searchQuery) {
+    filtered = PLAN.filter(i =>
+      i.r.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      i.date.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+  }
+  if (!searchQuery && activeMonth) {
+    const m = MONTHS.find(x => x.key === activeMonth);
+    filtered = PLAN.filter(i => i.d >= m.start && i.d <= m.end);
+  }
+  if (!filtered.length) {
+    container.innerHTML = `<div class="empty-state">
+      <svg width="48" height="48" fill="none" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" stroke="#7a8aaa" stroke-width="1.5"/><path d="M20 20l-3-3" stroke="#7a8aaa" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <p>Nenhuma leitura encontrada</p></div>`;
+    return;
+  }
+  let html = '';
+  if (!searchQuery && activeMonth === null) {
+    MONTHS.forEach(m => {
+      const items = filtered.filter(i => i.d >= m.start && i.d <= m.end);
+      if (!items.length) return;
+      const dc = items.filter(i => done.has(i.d)).length;
+      html += `<div class="month-header">
+        <span class="month-header-name">${m.name}</span>
+        <span class="month-header-pill">${m.key}</span>
+        <span class="month-header-count"><span>${dc}</span>/${items.length}</span>
+      </div>`;
+      items.forEach(item => { html += buildItem(item); });
+    });
+  } else {
+    if (activeMonth) {
+      const m = MONTHS.find(x => x.key === activeMonth);
+      const dc = filtered.filter(i => done.has(i.d)).length;
+      html += `<div class="month-header">
+        <span class="month-header-name">${m.name}</span>
+        <span class="month-header-pill">${m.key}</span>
+        <span class="month-header-count"><span>${dc}</span>/${filtered.length}</span>
+      </div>`;
+    }
+    filtered.forEach(item => { html += buildItem(item); });
+  }
+  container.innerHTML = html;
+
+  // Check buttons
+  container.querySelectorAll('.check-btn').forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.stopPropagation();
+      const d = parseInt(btn.dataset.day);
+      if (done.has(d)) { done.delete(d); showToast('Leitura desmarcada'); }
+      else { done.add(d); showToast('✓ Leitura concluída!'); }
+      saveDone(); updateProgress();
+      const el = btn.closest('.reading-item');
+      done.has(d) ? el.classList.add('done') : el.classList.remove('done');
+      if (currentDrawerItem && currentDrawerItem.d === d) updateMarkBtn();
+    });
+  });
+
+  // Open drawer on item click
+  container.querySelectorAll('.reading-item').forEach(item => {
+    item.addEventListener('click', e => {
+      if (e.target.closest('.check-btn')) return;
+      const dayNum = parseInt(item.id.replace('day-', ''));
+      const planItem = PLAN.find(p => p.d === dayNum);
+      if (planItem) openDrawer(planItem);
+    });
+  });
+}
+
+// ====== DRAWER ======
+function openDrawer(item) {
+  currentDrawerItem = item;
+  document.getElementById('drawerDayLabel').textContent = `Dia ${item.d} · ${item.date}`;
+  document.getElementById('drawerTitle').textContent = item.r;
+  updateMarkBtn();
+  if (passageCache[item.d]) {
+    document.getElementById('drawerBody').innerHTML = passageCache[item.d];
+    document.getElementById('btnRead').disabled = true;
+    document.getElementById('btnRead').innerHTML = `<svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Carregado`;
+  } else {
+    document.getElementById('drawerBody').innerHTML = `<div style="text-align:center;padding:60px 20px;color:var(--cinza-txt);font-size:14px;line-height:1.8;">Clique em <strong style="color:var(--azul-vivo)">"Ler passagem"</strong><br>para carregar o texto bíblico com IA.</div>`;
+    document.getElementById('btnRead').disabled = false;
+    document.getElementById('btnRead').innerHTML = `<svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Ler passagem`;
+  }
+  document.getElementById('drawer').classList.add('open');
+  document.getElementById('drawerOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeDrawer() {
+  document.getElementById('drawer').classList.remove('open');
+  document.getElementById('drawerOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function updateMarkBtn() {
+  if (!currentDrawerItem) return;
+  const isDone = done.has(currentDrawerItem.d);
+  const btn = document.getElementById('btnMarkDrawer');
+  document.getElementById('btnMarkText').textContent = isDone ? 'Lida ✓' : 'Marcar';
+  isDone ? btn.classList.add('marked') : btn.classList.remove('marked');
+}
+
+document.getElementById('drawerClose').addEventListener('click', closeDrawer);
+document.getElementById('drawerOverlay').addEventListener('click', closeDrawer);
+
+document.getElementById('btnMarkDrawer').addEventListener('click', () => {
+  if (!currentDrawerItem) return;
+  const d = currentDrawerItem.d;
+  done.has(d) ? (done.delete(d), showToast('Leitura desmarcada')) : (done.add(d), showToast('✓ Leitura concluída!'));
+  saveDone(); updateProgress(); updateMarkBtn();
+  const el = document.getElementById('day-' + d);
+  if (el) done.has(d) ? el.classList.add('done') : el.classList.remove('done');
+});
+
+document.getElementById('btnRead').addEventListener('click', async () => {
+  if (!currentDrawerItem || passageCache[currentDrawerItem.d]) return;
+  await loadPassage(currentDrawerItem);
+});
+
+async function loadPassage(item) {
+  const btn = document.getElementById('btnRead');
+  btn.disabled = true;
+  btn.innerHTML = `<div class="loading-spinner" style="width:18px;height:18px;border-width:2px;margin:0;border-top-color:white"></div> Carregando...`;
+  document.getElementById('drawerBody').innerHTML = `<div class="reading-loading"><div class="loading-spinner"></div><div class="loading-text">Carregando <strong>${item.r}</strong>...</div></div>`;
+
+  // Mapa nome PT → abbrev do bible_nvi.js
+  const ABBREV = {
+    'Gênesis':'gn','Êxodo':'ex','Levítico':'lv','Números':'nm','Deuteronômio':'dt',
+    'Josué':'js','Juízes':'jz','Rute':'rt','1 Samuel':'1sm','2 Samuel':'2sm',
+    '1 Reis':'1rs','2 Reis':'2rs','1 Crônicas':'1cr','2 Crônicas':'2cr',
+    'Esdras':'ed','Neemias':'ne','Ester':'et','Jó':'jó','Salmos':'sl',
+    'Provérbios':'pv','Eclesiastes':'ec','Cantares':'ct','Isaías':'is',
+    'Jeremias':'jr','Lamentações':'lm','Ezequiel':'ez','Daniel':'dn',
+    'Oséias':'os','Joel':'jl','Amós':'am','Obadias':'ob','Jonas':'jn',
+    'Miquéias':'mq','Naum':'na','Habacuque':'hc','Sofonias':'sf',
+    'Ageu':'ag','Zacarias':'zc','Malaquias':'ml',
+    'Mateus':'mt','Marcos':'mc','Lucas':'lc','João':'jo','Atos':'atos',
+    'Romanos':'rm','1 Coríntios':'1co','2 Coríntios':'2co','Gálatas':'gl',
+    'Efésios':'ef','Filipenses':'fp','Colossenses':'cl',
+    '1 Tessalonicenses':'1ts','2 Tessalonicenses':'2ts',
+    '1 Timóteo':'1tm','2 Timóteo':'2tm','Tito':'tt','Filemom':'fm',
+    'Hebreus':'hb','Tiago':'tg','1 Pedro':'1pe','2 Pedro':'2pe',
+    '1 João':'1jo','2 João':'2jo','3 João':'3jo','Judas':'jd','Apocalipse':'ap'
+  };
+
+  try {
+    // Carregar bible_nvi.js do mesmo repositório (se ainda não carregado)
+    if (!window.BIBLE_NVI) {
+      await new Promise((resolve, reject) => {
+        const s = document.createElement('script');
+        s.src = 'bible_nvi.js';
+        s.onload = resolve;
+        s.onerror = () => reject(new Error('Não foi possível carregar a Bíblia. Verifique se bible_nvi.js está no repositório.'));
+        document.head.appendChild(s);
+      });
+    }
+
+    // Parsear "Livro X-Y"
+    const match = item.r.match(/^(.+?)\s+(\d+)(?:-(\d+))?$/);
+    if (!match) throw new Error('Formato inválido: ' + item.r);
+    const bookName = match[1].trim();
+    const startCh  = parseInt(match[2]);
+    const endCh    = match[3] ? parseInt(match[3]) : startCh;
+    const abbrev   = ABBREV[bookName];
+    if (!abbrev) throw new Error('Livro não mapeado: ' + bookName);
+
+    const bookData = window.BIBLE_NVI[abbrev];
+    if (!bookData) throw new Error('Livro não encontrado na base: ' + abbrev);
+
+    let chaptersHTML = '';
+    for (let c = startCh; c <= endCh; c++) {
+      const verses = bookData[c - 1];
+      if (!verses) continue;
+      chaptersHTML += `<div class="chapter-title">${bookName} — Capítulo ${c}</div>`;
+      verses.forEach((v, i) => {
+        chaptersHTML += `<p class="verse-block"><span class="verse-num">${i + 1}</span> ${v}</p>`;
+      });
+    }
+
+    const finalHTML = `
+      <div class="passage-content">
+        ${chaptersHTML}
+        <div class="passage-note">📖 Igreja Batista Shema · Fortaleza–CE · Versão NVI (Nova Versão Internacional)</div>
+      </div>`;
+
+    passageCache[item.d] = finalHTML;
+    document.getElementById('drawerBody').innerHTML = finalHTML;
+    btn.innerHTML = `<svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Carregado`;
+    btn.disabled = true;
+
+  } catch(e) {
+    console.error('Erro:', e);
+    passageCache[item.d] = null;
+    document.getElementById('drawerBody').innerHTML = `
+      <div style="padding:36px 20px;text-align:center;">
+        <div style="font-size:40px;margin-bottom:14px">📖</div>
+        <div style="font-family:'Merriweather',serif;font-size:17px;font-weight:700;color:var(--azul-escuro);margin-bottom:10px">${item.r}</div>
+        <p style="font-size:13px;color:var(--cinza-txt);line-height:1.7;margin-bottom:20px">
+          ${e.message}
+        </p>
+        <button onclick="passageCache[currentDrawerItem.d]=null;loadPassage(currentDrawerItem)"
+          style="background:var(--azul-vivo);color:white;border:none;border-radius:10px;
+                 padding:11px 22px;font-family:'Montserrat',sans-serif;font-size:13px;
+                 font-weight:700;cursor:pointer;">
+          ↺ Tentar novamente
+        </button>
+      </div>`;
+    btn.innerHTML = '↺ Tentar novamente';
+    btn.disabled = false;
+  }
+}
+
+// Swipe to close
+let touchY0 = 0;
+document.getElementById('drawer').addEventListener('touchstart', e => { touchY0 = e.touches[0].clientY; }, {passive:true});
+document.getElementById('drawer').addEventListener('touchend', e => { if (e.changedTouches[0].clientY - touchY0 > 80) closeDrawer(); }, {passive:true});
+
+// Search
+document.getElementById('searchInput').addEventListener('input', e => {
+  searchQuery = e.target.value.trim();
+  if (searchQuery) activeMonth = null;
+  buildTabs(); renderList();
+});
+
+// Hoje
+document.getElementById('todayBtn').addEventListener('click', () => {
+  activeMonth = null; searchQuery = '';
+  document.getElementById('searchInput').value = '';
+  buildTabs(); renderList();
+  setTimeout(() => {
+    const el = document.getElementById('day-' + todayDay);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }, 100);
+});
+
+// Init
+buildTabs(); renderList(); updateProgress();
+setTimeout(() => {
+  const todayItem = PLAN.find(p => p.d === todayDay);
+  if (todayItem) {
+    const mk = todayItem.date.split('/')[1];
+    document.querySelectorAll('.tab-btn').forEach(t => {
+      const m = MONTHS.find(x => x.key === mk);
+      if (m && t.textContent === m.name.substring(0,3))
+        t.scrollIntoView({ behavior:'smooth', block:'nearest', inline:'center' });
+    });
+  }
+}, 300);
+</script>
+</body>
+</html>
